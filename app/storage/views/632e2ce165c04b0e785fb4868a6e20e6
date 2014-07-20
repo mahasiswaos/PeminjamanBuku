@@ -1,0 +1,37 @@
+
+<?php $__env->startSection('content'); ?>
+</br>
+</br>
+</br>
+</br>
+<div class="row">
+<div class="col-md-6 col-md-offset-3 ">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">Input Data</h3>
+        </div>
+        <div class="panel-body">
+            <form method="post" action="<?php echo URL::to('/test/add_proses') ?>" class="form-horizontal" role="form">
+                <div class="form-group">
+                    <label  class="col-sm-3 control-label">Nama</label>
+                    <div class="col-sm-9">
+                        <input type="nama" class="form-control" name="nama" >
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label  class="col-sm-3 control-label">Tanggal_lahir</label>
+                    <div class="col-sm-9">
+                        <input type="date" class="form-control" name="tanggal" >
+                    </div>
+                </div>
+                <button><span class="glyphicon glyphicon-save"></span>Simpan</button>
+            </form>
+
+        </div>
+    </div>
+</div>
+    </div>
+
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make ('layout.bootstrap3.index', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
